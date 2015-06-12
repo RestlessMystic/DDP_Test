@@ -1,0 +1,51 @@
+Interest Calculator WebApp
+========================================================
+
+
+Interest
+========================================================
+
+Interest is a fee paid by a borrower of assets to the owner as a form of compensation for the use of the assets. There are two types of Interest
+
+- Simple Interest
+- Compound Interest
+
+EMI or Equated Monthly Installments is what you pay per month to pay off your loan
+
+EMI Calculation
+========================================================
+For a Loan of 1,00,000 Rs taken at an interest rate of 8% for 5 years,total Interest is calculated as 
+
+```{r}
+amount = 600000
+rate = 12
+years = 5
+
+amount * ((1+(rate/100))^years) - amount
+
+```
+Total Amount payable 
+```{r}
+
+amount * ((1+(rate/100))^years)
+
+```
+
+
+EMI Calculation (contd..)
+========================================================
+EMI
+
+```{r}
+
+
+(amount * ((1+(rate/100))^years))/(years*12)
+
+```
+
+Interest Calculator
+========================================================
+
+- Interest calculator app does all this
+- It makes life a breeze, all you need is a computer and interenet connection
+- Available for free at https://restlessmystic.shinyapps.io/DDP_Test
